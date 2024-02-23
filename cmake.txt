@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.5)
+project(my_project)
+
+# Add the Person header and source files
+set(SOURCES
+    Person.cpp
+    main.cpp)
+
+# Create the executable
+add_executable(my_project ${SOURCES})
+
+# Install the executable
+install(TARGETS my_project DESTINATION bin)
